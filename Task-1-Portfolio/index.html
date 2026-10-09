@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Satyam Kumar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">Satyam<span>.</span></a>
+
+      <button class="menu-btn" id="menuBtn"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Satyam Kumar</span></h1>
+        <h2>Java Full Stack Developer</h2>
+        <p>
+          I build responsive websites and web applications
+          using modern technologies. I enjoy solving problems
+          and turning ideas into reality.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="avatar">SK</div>
+        <h3>Satyam Kumar</h3>
+        <p>Computer Science Student</p>
+        <div class="status"><span></span> Open to opportunities</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <p class="section-text">
+        I am a B.Tech Computer Science and Engineering student
+        interested in full-stack development. I have knowledge
+        of Java, Spring Boot, SQL, HTML, CSS and JavaScript.
+        I enjoy creating useful applications and learning new
+        technologies to improve my development skills.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="eyebrow">WHAT I WORK WITH</p>
+      <h2 class="section-title">My <span>Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill">Java</div>
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">React</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="eyebrow">SOME OF MY WORK</p>
+      <h2 class="section-title">My <span>Projects</span></h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon">01</div>
+          <h3>AI Smart Recruitment System</h3>
+          <p>
+            A recruitment platform designed to help analyze
+            resumes and match candidates with job requirements.
+          </p>
+          <div class="tags">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">02</div>
+          <h3>Online Banking System</h3>
+          <p>
+            A banking application concept for managing
+            accounts and viewing transaction details.
+          </p>
+          <div class="tags">
+            <span>Java</span><span>SQL</span><span>Web</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">03</div>
+          <h3>Expense Tracker</h3>
+          <p>
+            An application concept for recording expenses,
+            tracking income and calculating balances.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume-section">
+      <p class="eyebrow">MY EXPERIENCE & EDUCATION</p>
+      <h2 class="section-title">My <span>Resume</span></h2>
+      <p class="section-text">
+        Download my resume to learn more about my education,
+        technical skills and projects.
+      </p>
+      <a href="resume.pdf" class="btn" download>Download Resume ↓</a>
+      <p class="small-note">
+        Add your actual PDF resume to this folder and name it
+        resume.pdf to enable the download.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 class="section-title">Contact <span>Me</span></h2>
+      <p class="section-text">
+        Have an opportunity or idea? Send me a message.
+      </p>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name"
+          aria-label="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email"
+          aria-label="Your Email" required>
+        <textarea id="message" rows="5"
+          placeholder="Your Message" aria-label="Your Message"
+          required></textarea>
+        <button type="submit" class="btn">Validate Message</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Satyam Kumar. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
